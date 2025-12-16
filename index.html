@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="el">
+<head>
+    <meta charset="UTF-8">
+    <title>Ατομικός Παραγωγός Ελαιολάδου</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <style>
+        * {
+            box-sizing: border-box;
+            font-family: "Segoe UI", Arial, sans-serif;
+        }
+
+        body {
+            margin: 0;
+            background: #f6f3ef;
+            color: #2f3a1f;
+        }
+
+        /* Hero εικόνα */
+        .hero img {
+            width: 100%;
+            height: 350px;
+            object-fit: cover;
+        }
+
+        /* Κεντρικό container */
+        .container {
+            max-width: 1100px;
+            margin: -80px auto 40px;
+            padding: 0 20px;
+        }
+
+        /* Κάρτες */
+        .card {
+            background: #fffdf9;
+            border-radius: 14px;
+            padding: 30px;
+            box-shadow: 0 10px 25px rgba(0,0,0,0.08);
+        }
+
+        .card h2 {
+            text-align: center;
+            margin-bottom: 20px;
+            color: #4b5e2e;
+            border-bottom: 2px solid #c8b56a;
+            display: inline-block;
+            padding-bottom: 6px;
+        }
+
+        /* Πάνω κάρτα */
+        .wide {
+            text-align: center;
+            margin-bottom: 35px;
+        }
+
+        /* Grid κάτω καρτών */
+        .grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 30px;
+        }
+
+        /* Λίστα προϊόντος */
+        ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        li {
+            margin-bottom: 12px;
+            font-size: 1.05em;
+        }
+
+        /* Παραγγελίες */
+        .call {
+            text-align: center;
+        }
+
+        .phone {
+            margin: 20px 0;
+            font-size: 1.1em;
+        }
+
+        .btn {
+            display: inline-block;
+            background: linear-gradient(#d1ad3a, #b48b1e);
+            color: #fff;
+            padding: 15px 32px;
+            border-radius: 12px;
+            text-decoration: none;
+            font-weight: bold;
+            letter-spacing: 1px;
+        }
+
+        .btn:hover {
+            opacity: 0.9;
+        }
+
+        /* Footer */
+        footer {
+            text-align: center;
+            padding: 22px;
+            color: #777;
+            font-size: 0.9em;
+        }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            .grid {
+                grid-template-columns: 1fr;
+            }
+
+            .hero img {
+                height: 240px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Εικόνα -->
+    <header class="hero">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/8/8f/Olive_oil_in_a_glass_bottle.jpg"
+     alt="Εξαιρετικό παρθένο ελαιόλαδο">
+    </header>
+
+    <main class="container">
+
+        <!-- Παραγωγός -->
+        <section class="card wide">
+            <h2>Ο Παραγωγός</h2>
+            <p>
+                Ονομάζομαι <strong>ΤΟ ΟΝΟΜΑ ΣΟΥ</strong> και διαθέτω ελαιόλαδο από
+                οικογενειακή παραγωγή. Παραγγελίες απευθείας στον καταναλωτή.
+            </p>
+        </section>
+
+        <!-- Κάτω ενότητες -->
+        <div class="grid">
+
+            <section class="card">
+                <h2>Το Προϊόν</h2>
+                <ul>
+                    <li>✔ Εξαιρετικό Παρθένο</li>
+                    <li>✔ Φετινή σοδειά</li>
+                    <li>✔ Ψυχρή έκθλιψη</li>
+                    <li>✔ 1L – 5L – 17L</li>
+                </ul>
+            </section>
+
+            <section class="card call">
+                <h2>Παραγγελίες</h2>
+                <p class="phone">📞 <strong>ΜΟΝΟ</strong> τηλεφωνικά</p>
+                <a href="tel:6900000000" class="btn">ΚΑΛΕΣΕ ΜΕ</a>
+            </section>
+
+        </div>
+
+    </main>
+
+    <footer>
+        © 2025 Ατομικός Παραγωγός Ελαιολάδου
+    </footer>
+
+</body>
+</html>
